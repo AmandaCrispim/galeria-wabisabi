@@ -80,6 +80,7 @@ nav {
   flex-direction: column;
   gap: 2rem;
   background-color: var(--text-dark);
+  transform: translateY(-100%);
   transition: 0.5s;
   z-index: -1;
 }
@@ -100,5 +101,42 @@ nav {
 }
 
 .navbar_links a:hover {
-  
+  border-color: var(--white);
+}
+
+@media (width > 726px) {
+  .header {
+    min-height: 650px;
+  }
+
+  nav {
+    padding: 2rem;
+    position: static;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar_header {
+    display: none;
+  }
+
+  .navbar_links {
+    padding: 0;
+    width: 100%;
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+
+  .navbar_links .navbar_logo {
+    display: block;
+  }
+
+  .navbar_links .navbar_logo img {
+    max-width: 15;
+  }
 }
