@@ -83,3 +83,22 @@ nav {
   transition: 0.5s;
   z-index: -1;
 }
+
+.navbar_links.open {
+  transform: translateY(0);
+}
+
+.navbar_links .navbar_logo {
+  display: none;
+}
+
+.navbar_links a {
+  padding-bottom: 5px;
+  font-weight: 500;
+  color: var(--white);
+  border-bottom: 2px solid transparent;
+}
+
+.navbar_links a:hover {
+  
+}
