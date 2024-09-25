@@ -125,9 +125,19 @@ nav {
   border-color: var(--white);
 }
 
-.about
+.about_container .section_description {
+  max-width: 900px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
-@media (width > 726px) {
+.about_container img {
+  max-width: 300px;
+  margin-inline: auto;
+}
+
+@media (min-width: 726px) {
   .header {
     min-height: 650px;
   }
@@ -164,7 +174,7 @@ nav {
   }
 }
 
-@media (width > 1024px) {
+@media (min-width: 1024px) {
   .header {
     min-height: 700px;
   }
