@@ -13,3 +13,8 @@ navbarLinks.addEventListener("click", (e) => {
     navbarLinks.classList.remove("open")
     menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
+
+window.addEventListener("scroll", function(){
+    let navbar = document.querySelector('nav')
+    navbar.classList.toggle('scrolling', window.scrollY > 0)
+}) 
