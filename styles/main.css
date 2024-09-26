@@ -67,7 +67,6 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  max-width: var(--max-width);
   margin: auto;
   z-index: 9;
 }
@@ -104,6 +103,7 @@ nav {
   transform: translateY(-100%);
   transition: 0.5s;
   z-index: -1;
+  justify-content: center;
 }
 
 .navbar_links.open {
@@ -144,8 +144,6 @@ nav {
 
   nav {
     padding: 2rem;
-    position: static;
-    max-width: 900px;
     display: flex;
     align-items: center;
     justify-content: space-between;
